@@ -1,0 +1,200 @@
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: lightslategray;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@keyframes animacija {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation: animacija 1.5s ease-out;
+}
+
+
+nav a:hover {
+    color: #ffcc00; 
+}
+
+button:hover {
+    background-color: #555;
+    color: #ffcc00; 
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.galerija1 {
+    margin-bottom: 20px;
+}
+
+.galerija1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+@media only screen and (max-width: 320px) and (max-height: 425px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .galerija1 img {
+        margin: 0;
+    }
+
+    form {
+        grid-gap: 10px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .galerija1 img {
+        margin: 0;
+    }
+
+    form {
+        grid-gap: 10px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
